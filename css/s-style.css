@@ -19,7 +19,7 @@ a {
 
 .turquoise__share {
     padding:15px 15px 13px 0;
-    width:960px;
+    width:540px;
     margin:auto;
 }
 
@@ -34,29 +34,33 @@ a {
     border-bottom:1px solid black;
 }
 
-.turquoise__purple-logo {
-    width:300px;
-}
-
 .turquoise__purple-container {
     margin:auto;
-    width:960px;
+    width:640px;
+}
+
+.turquoise__purple-logo {
+    width:350px;
+    display:block;
+    margin:auto;
 }
 
 .turquoise__nav {
-    display:inline-block;
-    vertical-align:top;
-    margin-top:40px;
-    float:right;
+    margin:20px 0;
+    width:640px;
 }
 
 .purple__nav-item {
-    display:inline-block;
-    margin-left: 25px;
+    padding: 10px 0 0 15px;
+    font-size: 1.3em;
 }
 
-.purple__nav-item-dropdown {
-    position:relative;
+.purple__nav-item:not(:first-child) {
+    border-top:2px solid lightgrey;
+}
+
+.purple__nav-item:last-child {
+    border-bottom: 2px solid lightgrey;
 }
 
 .dropdown {
@@ -64,20 +68,17 @@ a {
 }
 
 .nav__item-menushow-book, .nav__item-menushow-destinations {
-    display:block;
-    width:90px;
-    position: absolute;
-    background:silver;
+    margin-left:-15px;
 }
 
 .menushow__book-item, .menushow__destinations-item {
-    display: block;
-    padding:10px 15px;
-    z-index:999;
+    display:block;
+    width:640px;
+    background:silver;
+    padding: 10px 0 10px 50px;
 }
 
 .menushow__book-item:not(:last-child), .menushow__destinations-item:not(:last-child) {
-    border-bottom:1px solid black;
 }
 
 .menushow__book-item:hover, .menushow__destinations-item:hover {
@@ -98,14 +99,12 @@ a {
 .carouselsection__carousel {
     margin:auto;
     overflow: hidden;
-    height:360px;
-    width:940px;
+    height:245px;
+    width:640px;
 }
 
 .carousel__slide {
-    height:360px;
-    /*position:relative;
-    top:0;*/
+    height:245px;
 }
 
 .chevroncarousel {
@@ -115,76 +114,78 @@ a {
     width:45px;
     position:absolute;
     cursor:pointer;
-    margin-top:160px;
+    margin-top:105px;
 }
 
 .chevroncarouselleft {
-    background-image: url("assets/2.png");
+    background-image: url("../assets/2.png");
 }
 
 .chevroncarouselright {
-    background-image: url("assets/2.png");
+    background-image: url("../assets/2.png");
     background-position: -45px 0px;
-    margin-left:895px;
+    margin-left:595px;
 }
 
 .carouselsection__indicators {
-    width:960px;
+    width:640px;
     text-align:center;
     margin:20px auto;
     margin-bottom:0;
 }
 
 .carouselsection__indicators-img {
-    background-image: url("assets/1.png");
-    background-repeat: no-repeat;
+    background-image:url("../assets/1.png");
+    background-repeat:no-repeat;
     height:30px;
     width:30px;
     display: inline-block;
 }
 
 .carouselsection__indicators-img:hover {
-    background-position: 0 -30px;
+    background-position:0 -30px;
     cursor:pointer;
 }
 
 .section {
-    width:960px;
+    width:640px;
     margin:auto;
 }
 
 .section__article {
-    line-height: 25px;
+    line-height: 20px;
     display: inline-block;
     vertical-align: top;
-    width:290px;
-    margin:30px 13px;
+    width:640px;
+    margin:30px 0;
 }
 
 .titre__purple {
     background:#9898f9;
-    width:300px;
+    width:640px;
     height:150px;
     color:white;
     font-weight: bold;
-    font-size:1.1em;
+    font-size:1.5em;
 }
 
 .section__article-img {
-    margin:20px;
+    margin:15px;
     float:left;
 }
 
 .article__title {
     display: block;
-    vertical-align: top;
-    padding-top:25px;
+    vertical-align: center;
+    line-height: 35px;
+    padding-top:45px;
     padding-right:5px;
 }
 
 .article__text {
+    margin-top:15px;
     color:grey;
-    font-size:0.9em;
+    font-size:1em;
 }
 
 .article__more {
@@ -193,7 +194,7 @@ a {
 }
 
 .destinations {
-    width:960px;
+    width:640px;
     margin:auto;
 }
 
@@ -205,7 +206,8 @@ a {
 
 .destinations__countries {
     display: inline-block;
-    margin: 20px 11px;
+    margin: 20px 5px;
+    width:640px;
 }
 
 .destinations__flags {
@@ -215,8 +217,13 @@ a {
     border-radius:4px;
 }
 
+.destinations__brazil, .destinations__Algeria {
+    display:none;
+}
+
 .destinations__countryname {
     font-weight: bold;
+    font-size: 1.3em;
     display: block;
     margin-bottom:30px;
 }
@@ -227,17 +234,17 @@ a {
 }
 
 .footer__up {
-    width:960px;
+    width:640px;
     margin:auto;
 }
 
 .footer__section {
     display: inline-block;
     margin-top:45px;
-    width:470px;
+    width:640px;
     vertical-align: top;
     font-size:0.8em;
-    line-height: 25px;
+    line-height:20px;
 }
 
 .footer__title {
@@ -249,17 +256,20 @@ a {
 }
 
 .footer__section-travel {
-    width:960px;
+    width:640px;
 }
 
 .footer__whyus-img {
     display: inline;
+    width:100px;
 }
 
 .footer__whyus-text {
-    display: inline-block;
-    vertical-align: top;
-    width:350px;
+    display:inline-block;
+    vertical-align:top;
+    line-height:25px;
+    font-size: 1.1em;
+    width:530px;
 }
 
 .footer__section:nth-child(1), .footer__section:nth-child(2) {
@@ -289,7 +299,7 @@ a {
 }
 
 .footer__down-section {
-    width:960px;
+    width:640px;
     margin:auto;
     text-align:left;
     font-size:0.8em;
